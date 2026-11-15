@@ -1,0 +1,90 @@
+{
+  "laboratorio": "S14",
+  "id_estudiante": "01",
+  "semilla": 1001,
+  "timestamp_utc": "2026-11-15T23:02:43.496457+00:00",
+  "python": "3.13.18",
+  "pandas": "2.2.3",
+  "numpy": "2.4.6",
+  "sklearn": "1.6.1",
+  "n_muestra": 35000,
+  "n_train": 24500,
+  "n_valid": 5250,
+  "n_test": 5250,
+  "huella_muestra": "9e0cf0664d9d",
+  "fuente_olist_commit": "fa0cc6d1aff713d3c8b9a1e633b56889881848bf",
+  "preprocesamiento": {
+    "variables_numericas_iniciales": 24,
+    "componentes_pca_90": 15,
+    "varianza_acumulada_pct": 90.64,
+    "umbral_clasificacion": 0.5,
+    "class_weight": "balanced"
+  },
+  "experimentos": {
+    "A": {
+      "C": 1.0,
+      "PCA": false,
+      "accuracy": 0.6685714285714286,
+      "precision": 0.12096332785987958,
+      "recall": 0.6225352112676056,
+      "f1": 0.20256645279560037,
+      "ap": 0.15996653975335023,
+      "FP": 1606,
+      "FN": 134,
+      "costo": 17538
+    },
+    "B": {
+      "C": 1.0,
+      "PCA": true,
+      "accuracy": 0.6396190476190476,
+      "precision": 0.10609943618657099,
+      "recall": 0.5830985915492958,
+      "f1": 0.1795316565481353,
+      "ap": 0.12643424633637726,
+      "FP": 1744,
+      "FN": 148,
+      "costo": 19132
+    },
+    "C": {
+      "C": 0.1,
+      "PCA": true,
+      "accuracy": 0.642095238095238,
+      "precision": 0.10681114551083591,
+      "recall": 0.5830985915492958,
+      "f1": 0.18054949847361534,
+      "ap": 0.1293051416364061,
+      "FP": 1731,
+      "FN": 148,
+      "costo": 19028
+    },
+    "D": {
+      "C": 10.0,
+      "PCA": true,
+      "accuracy": 0.6377142857142857,
+      "precision": 0.10596026490066225,
+      "recall": 0.5859154929577465,
+      "f1": 0.17946505608283003,
+      "ap": 0.12523080085532928,
+      "FP": 1755,
+      "FN": 147,
+      "costo": 19185
+    }
+  },
+  "referencia_dummy": {
+    "FN": 355,
+    "costo_brl": 12425.0
+  },
+  "modelo_elegido": "A",
+  "costo_didactico": {
+    "costo_fp_brl": 8,
+    "costo_fn_brl": 35
+  },
+  "ks_valor_flete": {
+    "D": 0.01308843537414961,
+    "p_valor": 0.44551824150051367,
+    "alfa": 0.05,
+    "decision": "no rechazar H0",
+    "n_train": 24500,
+    "n_valid": 5250
+  }
+}
